@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>message</title>
+</head>
+<script>
+    function ted() {
+        window.location.href="calculator.html"
+    }
+function red(){
+ia=window.setTimeout(ted,5000)
+document.getElementById("ms").innerHTML="calclator is opening please wait . . .  .";
+}
+function stop(){
+    window.clearTimeout(ia)
+    document.getElementById("ms").innerHTML="opening calculator has been stoped"
+}
+
+
+</script>
+<body>
+
+
+
+
+<button onclick="red()">open calculator</button><br><br>
+
+
+<label id="ms">click nxt to open calculator</label><br><br>
+<button onclick="stop()">stop opening calculator</button>
+
+</body>
+
+</html>

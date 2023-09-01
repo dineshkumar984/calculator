@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        calci
+    </title>
+
+<script>
+
+function append(value) {
+    
+    document.getElementById("result").value+=value
+}
+function calculate(result) {
+    result=document.getElementById("result").value
+    var final=eval(result);
+    document.getElementById("result").value=final;
+    
+}
+function clear() {
+    
+}
+
+</script>
+</head>
+<style>
+.result{
+border-width:50px ;
+
+}
+    .dis{
+        padding-left: 40px;
+        padding-top: 10px;
+        cursor: pointer;
+        margin-right: 74
+        0px;
+    }
+    
+    .res{
+        margin-left:40px ;
+    width: 100px;
+    }
+    .top{
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+    
+    </style>
+<body>
+<div id="cont" class="top">
+    
+    <div >
+        <input type="text"class="res" id="result" readonly>
+    </div>
+    <div class="dis">
+        <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button onclick="append('4')">4</button></div>
+    <div class="dis">
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+    </div>
+    <div class="dis">
+        <button onclick="append('9')">9</button>
+        <button onclick="append('0')">0</button>
+        <button onclick="append('+')">+</button>
+        <button onclick="append('-')">-</button>
+    </div>
+    <div class="dis">
+        <button onclick="append('*')">*</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="clear()" >C</button>
+        <button onclick="calculate()" >=</button>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
